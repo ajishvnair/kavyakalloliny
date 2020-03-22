@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<button type="button" onclick="window.location.href='sunu_index.html'"><-Back</button>
+<h1 class="ml16" style="text-align:center;">REWARDS</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml16 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+<style>
+.ml16 {
+  color: violet;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 180px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color:black;">
+
+<div class="gallery">
+  <a target="_blank" href="r1.jpeg">
+    <img src="r1.jpeg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="r2.jpeg">
+    <img src="r2.jpeg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="r3.jpeg">
+    <img src="r3.jpeg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="r4.jpeg">
+    <img src="r4.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r5.jpeg">
+    <img src="r5.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r6.jpeg">
+    <img src="r6.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r7.jpeg">
+    <img src="r7.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r8.jpeg">
+    <img src="r8.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r9.jpeg">
+    <img src="r9.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r10.jpeg">
+    <img src="r10.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r11.jpeg">
+    <img src="r11.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="r12.jpeg">
+    <img src="r12.jpeg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc" style="color:white;">Add a description of the image here</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1 class="ml16" style="text-align:center;">SUNU KRISHNA</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml16 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+<style>
+*{
+	box-sizing: border-box;
+}
+.right
+{
+	background-color:#e5e5e5;
+	float:right;
+	width:20%;
+	height:97%;
+	padding:10px;
+	padding-top:55px;
+	margin-top:7px;
+	text-align:center;
+}
+.left{
+
+float:left;
+width:20%;
+text-align:center;
+}
+.left a
+{
+	background-color:#e5e5e5;
+	width:100%;
+	padding:7px;
+	display:block;
+	margin-top:8px;
+	color:black;
+}
+.main
+{
+	float:left;
+	width:60%;
+	padding:20px;
+}
+.footer
+{
+	background-color:#e5e5e5;
+	text-align:left;
+	padding:10px;
+	margin-top:650px;
+	width:100%;
+}
+.ml16 {
+  color: violet;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+ <!--overflow: hidden;-->
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#black;background-color:black;">
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+<h1>KAVYAKALLOLINY</h1>
+</div>
+
+<div class="right">
+<h2>ABOUT</h2>
+<p>A piece of writing in which the expression of feelings and ideas is given intensity by particular attention to diction (sometimes involving rhyme), rhythm, and imagery.</p>
+<img src="1.jpeg" style="width:100%;height:65%;">
+</div>
+
+<div class="left">
+<a href="home.html"><b>HOME</b></a><br>
+<a href="gallery.html"><b>GALLERY</b></a><br>
+<a href="rewards.html"><b>REWARDS</b></a><br>
+<a href="contact.html"><b>CONTACT</b></a>
+<br>
+<img src="7.jpeg" style="width:100%;height:60.9%;">
+</div>
+<div class="main">
+<img src="2.jpeg" style="width:758px;height:610px;">
+</div>
+<div class="footer">
+<p style="text-align:center;color:black;"><b>sunukrishna@gmail.com</b></p>
+</div>
+</body>
+</html>
+
